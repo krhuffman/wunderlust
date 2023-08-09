@@ -289,10 +289,16 @@ display: contents;
 }
 
 input[type=radio]{
-    accent-color: var(--purple);
-    width: 50px;
+    appearance: none;
+    background-color: var(--white);
+    width: 3.5em;
+    height: 3.5em;
     border: 2px var(--purple) solid;
+    border-radius: 50%;
+    display: block;
 }
+
+
 
 .radio-label{
     text-transform: none;
@@ -317,6 +323,13 @@ fieldset{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+}
+
+fieldset label{
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
 }
 #selects{
     display: flex;
