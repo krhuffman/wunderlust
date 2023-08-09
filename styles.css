@@ -91,7 +91,6 @@ h4,p,q,small,nav,button,form{
     background: linear-gradient(var(--blue), var(--white));
     display: flex;
     flex-direction: column;
-
    }
 
    header img{
@@ -100,13 +99,30 @@ h4,p,q,small,nav,button,form{
    }
 
    h1{
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: left;
+    padding-left: 20px;
+   }
+   h2{
+    font-size: 2em;
+    padding: 20px;
+   }
+   h3{
+    font-size: 1.75em;
+    padding-left: 30px;
+    margin: 10px 0;
    }
 
    p{
-    width: 75%;
+    font-size: 1em;
+    line-height: 1.5;
+    padding: 0 20px;
+   }
 
+   #intro{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
    }
 
    #img-grid{
@@ -115,11 +131,224 @@ h4,p,q,small,nav,button,form{
     
    }
 
-   #img-grid{
+   #img-grid img{
     width: 100%;
     height: auto;
+    padding: 20px 0;
+   }
+
+   #plan{
+    background-color: var(--yellow);
     padding: 10px 0;
    }
+
+   #plan div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   #plan section{
+    background-color: var(--teal);
+    border: var(--white) 2px solid;
+    border-radius: 5px;
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+   }
+
+   #plan img{
+    width: 75%;
+    height: auto;
+    align-self: center;
+   }
+
+   #plan a{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+   }
+
+   #plan h4{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.25em;
+    padding: 10px;
+   }
+
+    #testimonials{
+        padding: 20px 0;
+    }
+
+   #testimonials div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   #testimonials section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+   }
+
+   #testimonials h4{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+   }
+
+   q{
+    width: 75%;
+    text-align: center;
+    font-style: italic;
+   }
+   q::before {
+    content: '"';
+  }
+  q::after {
+    content: '"';
+  }
+
+  #about{
+    padding: 20px 0;
+    background-color: var(--blue);
+}
+
+#about div{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#about section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+    width: 140px;
+    height: 140px;
+}
+
+#about h4{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#about p{
+    padding: 0;
+}
+#about img{
+    width: 100px;
+    height: 100px;
+}
+
+#contact{
+    padding: 20px 0;
+    background-color: var(--white);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form label, form legend{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px 0 0 20px;
+}
+
+.form-required{
+    font-size: 15px;
+    font-style: italic;
+    font-family: var(--font-family2);
+}
+
+input, select{
+    border: var(--purple) 2px solid;
+    height: 50px;
+    margin: 0 20px;
+}
+
+.custom-select{
+display: contents;
+}
+
+input[type=radio]{
+    accent-color: var(--purple);
+    width: 50px;
+    border: 2px var(--purple) solid;
+}
+
+.radio-label{
+    text-transform: none;
+    font-weight: normal;
+}
+
+form{
+    width: 100%;
+}
+
+#names{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+#nums{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+#selects{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+input[type=submit]{
+    background-color: var(--purple);
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+footer{
+    background-color: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 10px;
+}
+
+footer a{
+    text-decoration: none;
+    padding: 10px 0;
+    color: var(--black);
+}
+footer p{
+    padding: 20px 0;
+}
+
 
 }
 
