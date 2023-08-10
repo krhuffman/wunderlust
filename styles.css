@@ -439,7 +439,7 @@ h4,p,q,small,nav,button,form{
 
 }
 
-@media screen and (min-width:750px) {
+@media screen and (min-width:750px) and (max-width: 1079px){
     header {
         position: relative;
         width: 100%;
@@ -1120,10 +1120,6 @@ h4,p,q,small,nav,button,form{
     .radio-label {
         text-transform: none;
         font-weight: normal;
-    }
-
-    form {
-        width: 100%;
     }
 
     #names {
